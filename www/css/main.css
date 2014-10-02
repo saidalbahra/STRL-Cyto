@@ -4,7 +4,7 @@ body {
 a {
     text-decoration:none
 }
-:not(input) {
+:not(input):not(textarea) {
     -webkit-touch-callout:none;
     -webkit-user-select:none;
     -moz-user-select:none;
@@ -135,6 +135,10 @@ body, input, select, textarea, button, .ui-btn {
     margin-top: 42px;
 }
 
+#fishMenu .ui-content {
+    padding: 0;
+}
+
 .h1 {
     color:rgb(211,89,6);
 }
@@ -157,6 +161,12 @@ body, input, select, textarea, button, .ui-btn {
     text-align: center;
     font: normal 14px/48px zapfino;
     color:rgb(211,89,6);
+}
+
+.mainmenu {
+    margin-top: 0%;
+    font: bold 16px/18px HelveticaNeue;
+    color:rgb(90,90,90);
 }
 
 .menu {
@@ -191,8 +201,12 @@ body, input, select, textarea, button, .ui-btn {
     background-color: rgb(240,238,243);
 }
 
+#fishMenu .ui-collapsible {
+    margin: 0;
+}
+
 .ui-collapsible-content {
- background-color: rgb(247,247,247)!important;
+    background-color: rgb(247,247,247)!important;   
 }
 
 .panels {
@@ -241,7 +255,8 @@ body, input, select, textarea, button, .ui-btn {
 }
 
 .contactheader {
-    margin-top: 65px;
+    margin-top: 42px;
+    margin-bottom: 10px;
     text-align: center;
     font: 18px/14px copperplate;
     color:rgb(211,89,6);
@@ -281,7 +296,7 @@ body, input, select, textarea, button, .ui-btn {
 }
 
 .contact2 {
-    margin: auto;
+    margin-bottom: 10px;
     text-align: center;
     max-width: 350px;
     font: 14px/14px HelveticaNeue-light;

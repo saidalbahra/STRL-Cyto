@@ -73,6 +73,10 @@ $(document)
 .one("mobileinit", function(){
     //After jQuery mobile is loaded set intial configuration
     $.mobile.activeBtnClass = "activeButton";
+    setTimeout(function(){
+    $("#left-panel").enhanceWithin().panel();
+    },200);
+    
 })
 .on("resume",function(){
 // Handle OS resume event triggered by PhoneGap
@@ -110,3 +114,18 @@ function fixInputClick(page) {
         });
     }
 }
+
+$( document ).on( "pagecreate", function() {
+    $( document ).on( "swipeleft swiperight", function( e ) {
+        // We check if there is no open panel on the page because otherwise
+        // a swipe to close the left panel would also open the right panel (and v.v.).
+        // We do this by checking the data that the framework stores on the page element (panel: open).
+        if ( $( ".ui-page-active" ).jqmData( "panel" ) !== "open" ) {
+            if ( e.type === "swipeleft" ) {
+                $( "#right-panel" ).panel( "open" );
+            } else if ( e.type === "swiperight" ) {
+                $( "#left-panel" ).panel( "open" );
+            }
+        }
+    });
+});

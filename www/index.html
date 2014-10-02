@@ -18,17 +18,17 @@
 </head>
 
 <body>
-    <div data-role="page" id="start">
-        <div class="hdr1">
-            UT Health Science Center
-        </div>
-        <div class="hdr2">
-            at San Antonio
-        </div>
-        <div class="hdr3">
-            Department of Pathology
-        </div>
-        <div data-role="content" role="main" class="menu">
+    <div data-role="page">
+        <div data-role="content" role="main" class="mainmenu">
+            <div class="hdr1">
+                UT Health Science Center
+            </div>
+            <div class="hdr2">
+                at San Antonio
+            </div>
+            <div class="hdr3">
+                Department of Pathology
+            </div>
             <ul data-role="listview" data-inset="true" style="background-color:white">
                 <li data="listheader">
                     <div class="menuheader">Cytogenetics Laboratory</div>
@@ -66,14 +66,14 @@
             </a>
             <h1 class="h1">FISH Tests</h1>
         </div>
-    <div class="content">
+    <div data-role="content" role="main" class="content">
         <div class="fishHeader1">
             Hematological Malignancies
         </div>
         <div class="menuNote">
             *Probes listed under panels can be ordered as single FISH tests
         </div>
-        <div data-role="content" role="main" class="panels">
+        <div class="panels">
             <div data-role="collapsible" data-inset="false" data-iconpos="right" data-collapsed-icon="carat-u" data-expanded-icon="carat-d">
                 <h3>
                     AML / MDS Panel*
@@ -151,7 +151,7 @@
                         FIP1L1 / CHIC2 / PDGFRA
                     </div>
                     <div class="ui-block-a">
-                        hyperdiploidy – chrs. 10 & 17
+                        hyperdiploidy – chrs. 10 &amp; 17
                     </div>
                     <div class="ui-block-b">
                         D10Z1 / D17Z1
@@ -378,7 +378,7 @@
             <div class="fishHeader2">
                 Constitutional Abnormalities
             </div>
-        <div data-role="content" role="main" class="panels">
+        <div class="panels">
                 <div data-role="collapsible" data-inset="false" data-iconpos="right" data-collapsed-icon="carat-u" data-expanded-icon="carat-d">
                     <h3>Aneuvysion (Amniotic Fluid)</h3>
                     <div class="ui-grid-a">
@@ -505,7 +505,7 @@
         </div>
     </div>
 </div>
-    
+
     <div data-role="page" id="publications">
         <div data-role="header" style="background-color:inherit">
             <a role="button" href="javascript:void(0);" class="ui-btn ui-corner-all ui-shadow ui-btn-left ui-toolbar-back-btn ui-icon-carat-l ui-btn-icon-left" data-rel="back">
@@ -513,7 +513,7 @@
             </a>
             <h1 class="h1">Publications</h1>
         </div>
-        <div class="publicationlist">
+        <div data-role="content" class="publicationlist">
             <ul data-role="listview">
                 <li>
                     <a class="iab" href="http://www.sciencedirect.com/science/article/pii/S0014480014000884">
@@ -598,13 +598,13 @@
                 Contact
             </h1>
         </div>
-            <div class="content">
+            <div data-role="content" role="main">
                 <div>
                     <div class="contactheader">
                             Clinical and Molecular <br> Cytogenetics Laboratory
                     </div>
                 </div>
-                <div data-role="content" role="main" class="panels2">
+                <div class="panels2">
                     <div class="ui-grid-a">
                         <div class="ui-block-a">
                             phone
@@ -644,7 +644,7 @@
                 <div class="contact2">
                     Director, Cytogenetics Laboratory Professor, Pathology, Pediatrics and Clinical Laboratory Sciences
                 </div>
-                <div data-role="content" role="main" class="panels2">  
+                <div class="panels2">  
                     <div class="ui-grid-a">
                         <div class="ui-block-a">
                             phone
@@ -670,7 +670,7 @@
                 <div class="contact2">
                     Manager, Cytogenetics Laboratory
                 </div>
-                <div data-role="content" role="main" class="panels2">  
+                <div class="panels2">  
                     <div class="ui-grid-a">
                         <div class="ui-block-a">
                             phone - lab
@@ -699,6 +699,9 @@
                     </div>
                 </div>
             </div>
+    </div>
+    <div data-role="panel"  id="left-panel" data-display="push" data-theme="b">
+            <p>Left reveal panel.</p>
     </div>
 </body>
 
