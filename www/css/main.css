@@ -88,7 +88,7 @@ a {
     color:rgb(90,90,90); 
 }
 
-.ui-toolbar-back-btn {
+.flat-btn {
     background-color: transparent;
     border-color: none;
     color: none;
@@ -135,6 +135,12 @@ body, input, select, textarea, button, .ui-btn {
     margin-top: 42px;
 }
 
+#left-panel .ui-li-divider {
+    font: 17px copperplate;
+    color:rgb(211,89,6);
+    text-align: center;
+}
+
 #fishMenu .ui-content {
     padding: 0;
 }
@@ -169,15 +175,11 @@ body, input, select, textarea, button, .ui-btn {
     color:rgb(90,90,90);
 }
 
-.menu {
-    font: bold 16px/18px HelveticaNeue;
-    color:rgb(90,90,90);
-}
-
-.menuheader {
-    text-align: center;
-    font: 17px/12px copperplate;
-    color:rgb(211,89,6);
+.mainmenu .ui-li-divider {
+    text-align: center!important;
+    font: 17px/12px copperplate!important;
+    color:rgb(211,89,6)!important;
+    background-color: white!important;
 }
 
 .fishHeader1 {

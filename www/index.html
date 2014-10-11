@@ -19,7 +19,8 @@
 
 <body>
     <div data-role="page">
-        <div data-role="content" role="main" class="mainmenu">
+        <div data-role="content" role="main">
+            <a role="button" href="#left-panel" class="ui-btn ui-corner-all ui-shadow ui-btn-left ui-icon-bars ui-btn-icon-notext flat-btn"></a>
             <div class="hdr1">
                 UT Health Science Center
             </div>
@@ -29,30 +30,26 @@
             <div class="hdr3">
                 Department of Pathology
             </div>
-            <ul data-role="listview" data-inset="true" style="background-color:white">
-                <li data="listheader">
-                    <div class="menuheader">Cytogenetics Laboratory</div>
-                </li>
+            <ul class="mainmenu" data-role="listview" data-inset="true" style="background-color:white">
+                <li data-role="list-divider">Cytogenetics Laboratory</li>
                 <li>
                     <a href="#fishMenu">
-                        <div class="menu">FISH Test Menu</div>
+                        FISH Test Menu
                     </a>
                 </li>
                 <li>
                     <a href="#publications">
-                        <div class="menu">Recent Publications</div>
+                        Recent Publications
                     </a>
                 </li>
                 <li>
                     <a class="iab" href="http://pathology.uthscsa.edu/strl/cytogenics/docs/Cytogenetics%20Request%20Form.pdf?x=47&y=21">
-                        <div class="menu">FISH Request Form</div>
+                        FISH Request Form
                     </a>
                 </li>
                 <li>
                     <a href="#contact">
-                        <div class="menu">
-                            Contact Us
-                        </div>
+                        Contact Us
                     </a>
                 </li>
             </ul>
@@ -61,9 +58,7 @@
 
     <div data-role="page" id="fishMenu">
         <div data-role="header" style="background-color:inherit">
-            <a role="button" href="javascript:void(0);" class="ui-btn ui-corner-all ui-shadow ui-btn-left ui-toolbar-back-btn ui-icon-carat-l ui-btn-icon-left" data-rel="back">
-                Back
-            </a>
+            <a role="button" href="#left-panel" class="ui-btn ui-corner-all ui-shadow ui-btn-left ui-icon-bars ui-btn-icon-notext flat-btn"></a>
             <h1 class="h1">FISH Tests</h1>
         </div>
     <div data-role="content" role="main" class="content">
@@ -508,9 +503,7 @@
 
     <div data-role="page" id="publications">
         <div data-role="header" style="background-color:inherit">
-            <a role="button" href="javascript:void(0);" class="ui-btn ui-corner-all ui-shadow ui-btn-left ui-toolbar-back-btn ui-icon-carat-l ui-btn-icon-left" data-rel="back">
-                Back
-            </a>
+            <a role="button" href="#left-panel" class="ui-btn ui-corner-all ui-shadow ui-btn-left ui-icon-bars ui-btn-icon-notext flat-btn"></a>
             <h1 class="h1">Publications</h1>
         </div>
         <div data-role="content" class="publicationlist">
@@ -563,9 +556,7 @@
 
     <div data-role="page" id="awards">
         <div data-role="header" style="background-color:inherit">
-            <a role="button" href="javascript:void(0);" class="ui-btn ui-corner-all ui-shadow ui-btn-left ui-toolbar-back-btn ui-icon-carat-l ui-btn-icon-left" data-rel="back">
-                Back
-            </a>
+            <a role="button" href="#left-panel" class="ui-btn ui-corner-all ui-shadow ui-btn-left ui-icon-bars ui-btn-icon-notext flat-btn"></a>
         <h1 class="h1">Awards</h1>
         </div>
         <div class="content">
@@ -577,9 +568,7 @@
     
    <div data-role="page" id="team">
        <div data-role="header" style="background-color:inherit">
-           <a role="button" href="javascript:void(0);" class="ui-btn ui-corner-all ui-shadow ui-btn-left ui-toolbar-back-btn ui-icon-carat-l ui-btn-icon-left" data-rel="back">
-                Back
-           </a> 
+           <a role="button" href="#left-panel" class="ui-btn ui-corner-all ui-shadow ui-btn-left ui-icon-bars ui-btn-icon-notext flat-btn"></a>
            <h1 class="h1">The Team</h1>
        </div>
        <div class="content">
@@ -591,9 +580,7 @@
     
     <div data-role="page" id="contact">
         <div data-role="header" style="background-color:inherit">
-            <a role="button" href="javascript:void(0);" class="ui-btn ui-corner-all ui-shadow ui-btn-left ui-toolbar-back-btn ui-icon-carat-l ui-btn-icon-left" data-rel="back">
-                Back
-            </a>
+            <a role="button" href="#left-panel" class="ui-btn ui-corner-all ui-shadow ui-btn-left ui-icon-bars ui-btn-icon-notext flat-btn"></a>
             <h1 class="h1">
                 Contact
             </h1>
@@ -701,7 +688,30 @@
             </div>
     </div>
     <div data-role="panel"  id="left-panel" data-display="push" data-theme="b">
-            <p>Left reveal panel.</p>
+        <ul data-role="listview">
+            <li data-role="list-divider">Cytogenetics</li>
+            <li>
+                <a href="#fishMenu">
+                    FISH Test Menu
+                </a>
+            </li>
+            <li>
+                <a href="#publications">
+                    Recent Publications
+                </a>
+            </li>
+            <li>
+                <a class="iab" href="http://pathology.uthscsa.edu/strl/cytogenics/docs/Cytogenetics%20Request%20Form.pdf?x=47&y=21">
+                    FISH Request Form
+                </a>
+            </li>
+            <li>
+                <a href="#contact">
+                    Contact Us
+                </a>
+            </li>
+            <li data-role="list-divider">Cytology</li>
+        </ul>
     </div>
 </body>
 
